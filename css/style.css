@@ -1,5 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -9,12 +8,10 @@ body {
 
 header {
   background-image: url(../img/header-background.png);
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
-  max-height: 800px;
+  min-height: 700px;
   color: white;
   padding-bottom: 40px; }
   header .logo {
@@ -45,6 +42,7 @@ header {
     header ul li {
       display: inline-block;
       padding: 0 10px;
+      -moz-transition: color 0.5s;
       -o-transition: color 0.5s;
       -webkit-transition: color 0.5s;
       transition: color 0.5s;
@@ -97,14 +95,16 @@ header {
     left: -1%;
     width: 110%;
     height: 200%;
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg); }
 
 .about {
   background-color: #f4f4f4;
-  min-height: 100vh;
-  max-height: 800px;
+  min-height: 500px;
+  padding-bottom: 50px;
   text-align: left;
   overflow: hidden; }
   .about h5 {
@@ -124,6 +124,7 @@ header {
     letter-spacing: 0.38px; }
   .about .seeTheVideo {
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
@@ -143,8 +144,7 @@ header {
     padding-top: 10px; }
 
 .ourServices {
-  min-height: 90vh;
-  max-height: 600px;
+  min-height: 600px;
   color: #5a5a5a;
   position: relative; }
   .ourServices .col-12 {
@@ -167,6 +167,7 @@ header {
     color: #ed145b;
     font-size: 15px;
     font-weight: 700;
+    -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
@@ -174,35 +175,29 @@ header {
 .carousel {
   background-image: url(../img/header-background.png);
   background-attachment: fixed;
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 450px;
+  min-height: 400px;
   margin-top: 100px; }
   .carousel .col-8 {
     height: 450px;
     color: white;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
-    -webkit-box-pack: center;
     justify-content: center;
     -ms-flex-pack: center; }
     .carousel .col-8 p {
@@ -219,33 +214,28 @@ header {
   .carousel .col-2 {
     height: 450px;
     display: -webkit-box;
+    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
-    -webkit-box-pack: center;
     justify-content: center;
     -ms-flex-pack: center; }
     .carousel .col-2 img {
       cursor: pointer;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
       transition: all 0.5s; }
       .carousel .col-2 img:hover {
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.7); }
 
 .ourPrices {
-  min-height: 170vh;
-  max-height: 1100px;
+  min-height: 1000px;
   background-color: #f4f4f4; }
   .ourPrices .col-12 h3 {
     font-size: 38px;
@@ -269,6 +259,7 @@ header {
       height: 150px;
       width: 100%;
       background-color: #5a5a5a;
+      -moz-transition: all 0.6s;
       -o-transition: all 0.6s;
       -webkit-transition: all 0.6s;
       transition: all 0.6s; }
@@ -318,13 +309,13 @@ header {
     background-color: #ed145b; }
 
 .features {
-  min-height: 90vh;
-  max-height: 720px; }
+  min-height: 600px; }
   .features .col-4 {
     margin-top: 150px;
     text-align: left; }
     .features .col-4 .element {
       display: -webkit-box;
+      display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
@@ -345,19 +336,17 @@ header {
   background-color: #ed145b;
   height: 200px;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  -webkit-box-pack: center;
   justify-content: center;
   -ms-flex-pack: center;
   color: white; }
@@ -382,9 +371,8 @@ header {
   color: #ed145b; }
 
 .gallery {
-  min-height: 230vh;
-  max-height: 1600px;
-  padding-bottom: 30px; }
+  min-height: 800px;
+  padding-bottom: 60px; }
   .gallery .col-12 h3 {
     font-size: 38px;
     font-weight: 400;
@@ -408,12 +396,12 @@ header {
       width: 360px;
       height: 250px;
       background-position: 10% 2%;
-      -webkit-background-size: 200% 200%;
       background-size: 200%;
       background-image: -webkit-linear-gradient(88deg, rgba(237, 20, 91, 0.9) 50%, transparent 50%);
       background-image: -o-linear-gradient(88deg, rgba(237, 20, 91, 0.9) 50%, transparent 50%);
       background-image: linear-gradient(2deg, rgba(237, 20, 91, 0.9) 50%, transparent 50%);
       background-image: -moz-linear-gradient(0deg, rgba(237, 20, 91, 0.9) 0%, transparent 0%);
+      -moz-transition: all 1s;
       -o-transition: all 1s;
       -webkit-transition: all 1s;
       transition: all 1s; }
@@ -423,13 +411,13 @@ header {
         opacity: 1; }
       .gallery .element .layer span {
         display: -webkit-box;
+        display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         -webkit-justify-content: center;
         -moz-justify-content: center;
         -ms-justify-content: center;
-        -webkit-box-pack: center;
         justify-content: center;
         -ms-flex-pack: center; }
         .gallery .element .layer span .fa-search {
@@ -437,6 +425,7 @@ header {
           margin-top: 105px;
           color: white;
           font-size: 50px;
+          -moz-transition: all 1s;
           -o-transition: all 1s;
           -webkit-transition: all 1s;
           transition: all 1s;
@@ -468,11 +457,9 @@ header {
 .psdTemplate {
   background-image: url(../img/header-background.png);
   background-attachment: fixed;
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  max-height: 800px;
+  min-height: 700px;
   color: white;
   padding-bottom: 60px; }
   .psdTemplate h3 {
@@ -501,8 +488,7 @@ header {
     cursor: pointer; }
 
 .share {
-  min-height: 100vh;
-  max-height: 800px; }
+  min-height: 800px; }
   .share .col-6 {
     margin: 78px 0;
     text-align: left; }
@@ -544,14 +530,13 @@ footer {
   margin-top: 100px;
   background-color: #2b2b2b;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-size: 15px; }
   footer p {
@@ -609,16 +594,8 @@ footer {
   width: 100%; }
 
 .fade-in {
-  -webkit-animation-name: fade-in;
   animation-name: fade-in;
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s; }
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 @keyframes fade-in {
   from {
@@ -635,7 +612,8 @@ footer {
   .col-6-lg {
     width: 50%; }
   header .col-12-md p {
-    width: auto; }
+    width: auto;
+    padding: 30px; }
   .about {
     padding-left: 30px; }
   .carousel .col-8 p {
@@ -684,7 +662,8 @@ footer {
       margin-top: 0px; }
       header .col-12-md p {
         width: auto;
-        font-size: 18px; }
+        font-size: 18px;
+        padding: 30px; }
     header .menu-layer {
       display: none;
       position: fixed;
@@ -698,8 +677,6 @@ footer {
       float: left;
       padding: 20px;
       font-size: 40px;
-      -webkit-transition: color 0.5s;
-      -o-transition: color 0.5s;
       transition: color 0.5s;
       cursor: pointer;
       position: absolute;
@@ -711,8 +688,6 @@ footer {
       list-style-type: none;
       padding: 60px 0 0 0; }
       header .hidden-menu li {
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
         transition: all 0.5s; }
         header .hidden-menu li:hover {
           color: #ed145b;
@@ -729,8 +704,6 @@ footer {
       margin: 40px 30px;
       border: none;
       background-color: white;
-      -webkit-transition: all .3s;
-      -o-transition: all .3s;
       transition: all .3s;
       border-radius: 5px;
       cursor: pointer; }
@@ -747,8 +720,6 @@ footer {
     width: auto;
     font-size: 18px; }
   .ourPrices {
-    min-height: 250vh;
-    max-height: 1700px;
     padding-bottom: 40px; }
     .ourPrices .col-3-lg .offer {
       padding: 20px;
@@ -766,21 +737,18 @@ footer {
       margin-top: 150px; }
   .macheCommunity .col-12 h4 {
     font-size: 20px; }
-  .gallery {
-    min-height: 340vh;
-    max-height: 2800px; }
-    .gallery .element {
-      width: 350px;
-      margin: 0 auto 80px auto; }
-      .gallery .element .layer {
-        width: 350px; }
-        .gallery .element .layer img {
-          width: 350px;
-          height: 250px; }
-      .gallery .element .bottom {
-        width: 350px; }
-        .gallery .element .bottom p {
-          width: auto; }
+  .gallery .element {
+    width: 350px;
+    margin: 0 auto 80px auto; }
+    .gallery .element .layer {
+      width: 350px; }
+      .gallery .element .layer img {
+        width: 350px;
+        height: 250px; }
+    .gallery .element .bottom {
+      width: 350px; }
+      .gallery .element .bottom p {
+        width: auto; }
   .share:last-child h3 {
     width: auto; }
   .share:last-child P {
@@ -822,8 +790,6 @@ footer {
     float: left;
     padding: 20px;
     font-size: 40px;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
     transition: color 0.5s;
     cursor: pointer;
     position: absolute;
@@ -835,8 +801,6 @@ footer {
     list-style-type: none;
     padding: 60px 0 0 0; }
     header .hidden-menu li {
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
       transition: all 0.5s; }
       header .hidden-menu li:hover {
         color: #ed145b;
@@ -853,8 +817,6 @@ footer {
     margin: 40px 30px 0 0;
     border: none;
     background-color: white;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
     border-radius: 5px;
     cursor: pointer; }
@@ -866,8 +828,6 @@ footer {
   header ul {
     display: none; }
   .about {
-    min-height: 115vh;
-    max-height: 1000px;
     padding-left: 30px; }
     .about h5 {
       font-size: 28px;
@@ -882,26 +842,15 @@ footer {
     .about p {
       padding: 20px; }
     .about .seeTheVideo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center; }
-  .ourServices {
-    min-height: 150vh;
-    max-height: 1300px; }
-    .ourServices .col-12 p {
-      width: auto;
-      padding: 20px; }
+  .ourServices .col-12 p {
+    width: auto;
+    padding: 20px; }
   .carousel .col-8 p {
     width: auto;
     font-size: 15px; }
   .ourPrices {
-    min-height: 500vh;
-    max-height: 4000px;
     padding-bottom: 40px; }
     .ourPrices .col-12 p {
       width: auto;
@@ -926,24 +875,21 @@ footer {
     padding-left: 10px; }
   .macheCommunity .col-12 button {
     margin-right: 15px; }
-  .gallery {
-    min-height: 680vh;
-    max-height: 4800px; }
-    .gallery .col-12 p {
-      width: auto;
-      padding: 20px; }
-    .gallery .element {
-      width: 350px;
-      margin: 0 auto 80px auto; }
-      .gallery .element .layer {
-        width: 350px; }
-        .gallery .element .layer img {
-          width: 350px;
-          height: 250px; }
-      .gallery .element .bottom {
-        width: 350px; }
-        .gallery .element .bottom p {
-          width: auto; }
+  .gallery .col-12 p {
+    width: auto;
+    padding: 20px; }
+  .gallery .element {
+    width: 350px;
+    margin: 0 auto 80px auto; }
+    .gallery .element .layer {
+      width: 350px; }
+      .gallery .element .layer img {
+        width: 350px;
+        height: 250px; }
+    .gallery .element .bottom {
+      width: 350px; }
+      .gallery .element .bottom p {
+        width: auto; }
   .psdTemplate p {
     width: auto;
     padding: 20px; }
@@ -962,13 +908,7 @@ footer {
       width: auto;
       padding: 40px; }
     .share .col-12-sm .share-button {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center; }
   .share img {
     display: none; }
@@ -1010,8 +950,6 @@ footer {
     float: left;
     padding: 20px;
     font-size: 40px;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
     transition: color 0.5s;
     cursor: pointer;
     position: absolute;
@@ -1023,8 +961,6 @@ footer {
     list-style-type: none;
     padding: 60px 0 0 0; }
     header .hidden-menu li {
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
       transition: all 0.5s; }
       header .hidden-menu li:hover {
         color: #ed145b;
@@ -1041,8 +977,6 @@ footer {
     margin: 40px 30px 0 0;
     border: none;
     background-color: white;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
     border-radius: 5px;
     cursor: pointer; }
@@ -1054,8 +988,6 @@ footer {
   header ul {
     display: none; }
   .about {
-    min-height: 125vh;
-    max-height: 1200px;
     padding-left: 30px; }
     .about h5 {
       font-size: 28px;
@@ -1070,26 +1002,15 @@ footer {
     .about p {
       padding: 20px; }
     .about .seeTheVideo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center; }
-  .ourServices {
-    min-height: 150vh;
-    max-height: 1400px; }
-    .ourServices .col-12 p {
-      width: auto;
-      padding: 20px; }
+  .ourServices .col-12 p {
+    width: auto;
+    padding: 20px; }
   .carousel .col-8 p {
     width: auto;
     font-size: 15px; }
   .ourPrices {
-    min-height: 300vh;
-    max-height: 4000px;
     padding-bottom: 40px; }
     .ourPrices .col-12 p {
       width: auto;
@@ -1115,57 +1036,42 @@ footer {
     font-size: 20px; }
   .macheCommunity .col-12 button {
     margin-right: 15px; }
-  .gallery {
-    min-height: 300vh;
-    max-height: 5500px; }
-    .gallery .col-12 p {
+  .gallery .col-12 p {
+    width: auto;
+    padding: 20px; }
+  .gallery .element {
+    width: 250px;
+    margin: 0 auto 80px auto; }
+    .gallery .element .layer {
+      width: 250px; }
+      .gallery .element .layer img {
+        width: 250px;
+        height: 250px; }
+    .gallery .element .bottom {
+      width: 250px; }
+      .gallery .element .bottom p {
+        width: auto; }
+  .psdTemplate p {
+    width: auto;
+    padding: 20px; }
+  .share .col-6 {
+    display: none; }
+  .share .col-12-sm {
+    display: block;
+    margin: 0; }
+    .share .col-12-sm h3 {
       width: auto;
-      padding: 20px; }
-    .gallery .element {
-      width: 250px;
-      margin: 0 auto 80px auto; }
-      .gallery .element .layer {
-        width: 250px; }
-        .gallery .element .layer img {
-          width: 250px;
-          height: 250px; }
-      .gallery .element .bottom {
-        width: 250px; }
-        .gallery .element .bottom p {
-          width: auto; }
-  .psdTemplate {
-    min-height: 150vh;
-    max-height: 1500px; }
-    .psdTemplate p {
+      padding: 30px;
+      text-align: center; }
+    .share .col-12-sm hr {
+      display: none; }
+    .share .col-12-sm P {
       width: auto;
-      padding: 20px; }
-  .share {
-    min-height: 200vh;
-    max-height: 1600px; }
-    .share .col-6 {
-      display: none; }
-    .share .col-12-sm {
-      display: block;
-      margin: 0; }
-      .share .col-12-sm h3 {
-        width: auto;
-        padding: 30px;
-        text-align: center; }
-      .share .col-12-sm hr {
-        display: none; }
-      .share .col-12-sm P {
-        width: auto;
-        padding: 40px; }
-      .share .col-12-sm .share-button {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-    .share img {
-      display: none; }
+      padding: 40px; }
+    .share .col-12-sm .share-button {
+      display: flex;
+      justify-content: center; }
+  .share img {
+    display: none; }
   footer {
     font-size: 12px; } }
