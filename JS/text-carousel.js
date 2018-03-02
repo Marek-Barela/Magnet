@@ -16,7 +16,7 @@ function nextText() {
 function previousText() {
     resetText()
     currentIndex--
-    if(currentIndex >= 0) {
+    if (currentIndex >= 0) {
         textParagraphs[currentIndex].style.display = 'block'
     }
     else {
@@ -25,9 +25,9 @@ function previousText() {
     }
 }
 function resetText() {
-    textParagraphs.forEach(function(nr) {
-        nr.style.display = 'none'
-    });
+    for (let i = 0; i <= textParagraphs.length - 1; i++) {
+        textParagraphs[i].style.display = 'none'
+    }
 }
 rightArrow.addEventListener('click', nextText)
 leftArrow.addEventListener('click', previousText)
