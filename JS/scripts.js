@@ -19,3 +19,4 @@ function borderUnderNavigation() {
 
 $hamburgerMenuButton.on('click', toggleHiddenMenu)
 $(window).on('scroll', borderUnderNavigation)
+borderUnderNavigation()
