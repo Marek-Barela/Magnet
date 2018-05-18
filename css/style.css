@@ -661,7 +661,7 @@ footer {
     padding: 15px; }
     .comment-section textarea:hover, .comment-section .comment-section__input:hover {
       border: 1px solid black; }
-  .comment-section input {
+  .comment-section .comment-section__input {
     height: 40px; }
 
 .form__button {
